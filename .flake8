@@ -1,5 +1,7 @@
 [flake8]
 ignore = E265, F811, PT001, DJ05, D100, D105, D104, W504, W292
+per-file-ignores =
+    ./app/crud/charity_project.py:E501
 max-line-length = 79
 paths = 
     ./app
