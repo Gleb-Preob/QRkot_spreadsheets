@@ -15,7 +15,6 @@ router = APIRouter()
 
 @router.post(
     '/',
-    # Тип возвращаемого эндпоинтом ответа
     response_model=list[ProjectDB],
     dependencies=[Depends(current_superuser)],
 )
